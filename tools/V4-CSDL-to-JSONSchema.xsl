@@ -13,7 +13,7 @@
   <xsl:strip-space elements="*" />
 
 
-  <xsl:variable name="edmUri" select="'https://oasis-tcs.github.io/odata-json-schema/tools/odata-meta-schema.json'" />
+  <xsl:variable name="edmUri" select="'https://raw.githubusercontent.com/oasis-tcs/odata-json-schema/main/tools/odata-meta-schema.json'" />
   <xsl:variable name="coreNamespace" select="'Org.OData.Core.V1'" />
   <xsl:variable name="coreAlias" select="//edmx:Include[@Namespace=$coreNamespace]/@Alias|//edm:Schema[@Namespace=$coreNamespace]/@Alias" />
   <xsl:variable name="coreDescription" select="concat('@',$coreNamespace,'.Description')" />
